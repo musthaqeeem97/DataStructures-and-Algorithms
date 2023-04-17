@@ -1,5 +1,6 @@
 package SinglyLinkedList;
 
+import datastructure.array.Array06MergeTwoSortedArrays;
 
 public class SinglyLinkedList {
 
@@ -51,11 +52,15 @@ public class SinglyLinkedList {
 		}
 		public void deleteLastElement() {
 			
-			if (head==null || head.next == null) return;
+			if (head==null ) return;
+			if (head.next == null) {
+				head = head.next;
+				return;
+			}
 			
 			Node previous = null;
 			Node current = head;
-			
+	 		
 			while(current.next != null) {
 				previous = current;
 				current = current.next;
@@ -167,16 +172,13 @@ public class SinglyLinkedList {
      public void insertAfterValue(int searchValue, int data ) {
 		 
 
-		 if(searchValue == head.data) {
-			 insertFirst(data);
-			 return;
-		 }
+		 
 		 Node currentNode = head;
 		
-		 while (currentNode.next != null && currentNode.data !=searchValue ) {
+		 while (currentNode != null && currentNode.data !=searchValue ) {
 			currentNode = currentNode.next;
 		}
-		 if(currentNode.next == null ) {
+		 if(currentNode == null ) {
 			 System.out.println("element not found");
 			 return;
 		 }
@@ -265,5 +267,57 @@ public class SinglyLinkedList {
 		 }
 		 
 	 }
+	  public Node merge(Node a, Node b) {
+		  
+         Node dummyNode = new Node(0);
+         Node tailNode = dummyNode;
+         
+         while(a!=null && b != null ) {
+        	 if(a.data< b.data) {
+        		 tailNode.next = a;
+        		 a = a.next;
+        	 }else {
+				tailNode.next = b;
+				b = b.next;
+			}
+        	 tailNode = tailNode.next;
+         }
+         
+         if(a == null) {
+        	 tailNode.next = b;
+         }
+         else {
+        	 tailNode.next = a;
+         }
+         return dummyNode.next;
+	 }
+	  public static void main(String[] args) {
+		SinglyLinkedList l = new SinglyLinkedList();
+		
+
+		   int[] arr = {1,4,6,7,9};
+
+		     for(int data : arr) {
+		    	 l.insertLast(data);
+		     }
+		    
+		  
+		     
+		     l.display();
+		     System.out.println();
+		     SinglyLinkedList l2 = new SinglyLinkedList();
+		     int[] arr2 = {2,5,6,8,11};
+
+		     for(int data : arr2) {
+		    	 l2.insertLast(data);
+		     }
+		     l2.display();
+		     SinglyLinkedList res = new SinglyLinkedList();
+		      res.head =res.merge(l.head,l2.head);
+		     System.out.println();
+		     res.display();
+	      
+	}
+	  
 	 
 }

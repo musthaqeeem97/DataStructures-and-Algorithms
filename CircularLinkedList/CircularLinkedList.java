@@ -1,4 +1,4 @@
-package CircularLinkedList;
+package circularlinkedlist;
 
 
 public class CircularLinkedList {
