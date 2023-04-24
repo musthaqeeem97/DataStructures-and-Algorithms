@@ -1,12 +1,13 @@
 package datastructure.array;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Array03TwoSum {
 
 	
     public int[] twoSum(int[] nums, int target) {
-	        
+	     
     	int[] res = new int[2];
     	
     	for (int i = 0; i < nums.length; i++) {
@@ -21,6 +22,9 @@ public class Array03TwoSum {
     	
     	return new int[0];
 	    }
+    
+    //n logn complexity using single loop
+  
 
 	    
 	public static void main(String[] args) {

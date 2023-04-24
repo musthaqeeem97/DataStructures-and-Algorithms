@@ -1,4 +1,4 @@
-package SinglyLinkedList;
+package singlylinkedlist;
 
 public class Test {
 

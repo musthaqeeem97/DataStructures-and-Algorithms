@@ -1,6 +1,6 @@
-package SinglyLinkedList;
+package singlylinkedlist;
 
-import datastructure.array.Array06MergeTwoSortedArrays;
+
 
 public class SinglyLinkedList {
 
