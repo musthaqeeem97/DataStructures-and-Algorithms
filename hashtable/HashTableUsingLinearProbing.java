@@ -84,9 +84,9 @@ public class HashTableUsingLinearProbing {
 		int index = Hashing(key);
 		
 		if(buckets[index]!= null && buckets[index].key.equals(key)) {
-			String removedNode = buckets[index].value; 
+			Node removedNode = buckets[index]; 
 			buckets[index]= null;
-			return removedNode;
+			return removedNode.value;
 		}else {
 			int i = 1;
 			while(i<size) {

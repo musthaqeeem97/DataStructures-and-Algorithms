@@ -32,5 +32,5 @@ public class InsertionSort {
 		s.insertionSort(arr);
 		System.out.println(Arrays.toString(arr));
     }
-	
+	 
 }

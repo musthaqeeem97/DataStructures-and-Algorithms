@@ -10,7 +10,7 @@ public class SelectionSort {
 	public void sort(int[] arr) {
 		
 		for (int i = 0; i < arr.length-1; i++) {
-			//find a index of the minimum
+			//find index of the minimum
 			int min = i;
 			
 			for (int j = i+1; j < arr.length; j++) {

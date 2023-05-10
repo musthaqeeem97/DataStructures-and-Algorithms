@@ -30,6 +30,7 @@ public class StackUsingLinkedListImplementation {
 	
 	public boolean isEmpty() {
 		return length == 0;
+
 	}
 	
 	//push() in stack return the data whose type is that of the argument; 

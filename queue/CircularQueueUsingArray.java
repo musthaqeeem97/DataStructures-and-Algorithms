@@ -24,7 +24,7 @@ public class CircularQueueUsingArray {
 		end%=data.length;
 		size++;
 		return true;
-		
+	
 	}
 	
 	public int remove() throws Exception{

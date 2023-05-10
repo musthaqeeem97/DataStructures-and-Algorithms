@@ -17,6 +17,7 @@ public class DynamicCircularQueueUsingArray  extends CircularQueueUsingArray{
 			for (int i = 0; i < data.length; i++) {
 				temp[i] = data[(front+i)%data.length];
 			}
+			
 			front = 0;
 			end = data.length;
 			data = temp;

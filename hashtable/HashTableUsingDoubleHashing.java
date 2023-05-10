@@ -50,7 +50,7 @@ public class HashTableUsingDoubleHashing {
 			if (isPrime(tableSize)) {
 				return tableSize;
 			}
-			tableSize++;
+			tableSize++; 
 		}
     }
     

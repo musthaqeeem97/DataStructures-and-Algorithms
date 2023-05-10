@@ -2,7 +2,7 @@ package mergesort;
 
 import java.util.Arrays;
 
-public class MergeSortOptimized {
+public class MergeSortTwo {
 
 	public void sort(int[]arr, int start ,int end) {
 		if(end-start==1) return;
@@ -51,15 +51,13 @@ public class MergeSortOptimized {
 	}
 	
 	
-	
-	
 
 	public static void main(String[] args) {
-		MergeSortOptimized m = new MergeSortOptimized();
+		MergeSortTwo m = new MergeSortTwo();
     	int[] arr = {5,3,24,12,6,4};
 		
 		
-		m.sort(arr, 0, arr.length-1);
+		m.sort(arr, 0, arr.length);
 		System.out.println(Arrays.toString(arr));
 	}
 }

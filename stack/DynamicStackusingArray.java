@@ -21,7 +21,7 @@ public class DynamicStackusingArray extends StackUsingArray{
 			temp[i] = data[i];
 		}
 		    data = temp;
-		    
+	   
 		}
 		return super.push(item);
 	}

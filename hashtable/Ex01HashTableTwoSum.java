@@ -6,6 +6,7 @@ import java.util.Map;
 
 public class Ex01HashTableTwoSum {
 
+	
 	public int[] findTwoSumIndexes(int[] arr,int target) {
 		int[] resultIndexes = new int[2];
 		HashMap<Integer, Integer> hashMap = new HashMap<>();

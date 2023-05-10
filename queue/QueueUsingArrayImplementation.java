@@ -22,7 +22,7 @@ public class QueueUsingArrayImplementation {
 		return true;
 		
 	}
-	
+
 	public int remove() throws Exception {
 		if (isEmpty()) throw new Exception("cannot remove element as the queue is empty.");
 			
@@ -38,7 +38,7 @@ public class QueueUsingArrayImplementation {
 	
 	public int  peek() throws Exception {
 	
-		if (isEmpty()) {
+		if(isEmpty()) {
 			throw new Exception("cannot peek  as the queue is empty.");
 		}
 		return data[0];
